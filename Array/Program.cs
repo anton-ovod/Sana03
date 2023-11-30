@@ -26,14 +26,15 @@ while(true)
 double[] randomNumbers = new double[numberOfElements];
 
 Console.WriteLine($"Array of size `{numberOfElements}` filled with random double numbers: \n");
+
 for (int i = 0; i < numberOfElements; i++)
 {
     double randomNumber = randomGenerator.NextDouble() * 100 - 50;
     randomNumbers[i] = randomNumber;
     Console.Write($"{randomNumbers[i],9:F2} ");
 }
-Console.Write("\n\n");
 
+Console.Write("\n\n");
 
 foreach (double randomNumber in randomNumbers)
 {
@@ -52,9 +53,14 @@ foreach (double randomNumber in randomNumbers)
 }
 
 Console.WriteLine("Sum of negative elements is equal to: {0:F2}", sumOfNegativeElements);
+
 Console.WriteLine("Minimal element is equal to: {0:F2}", minElement);
+
 Console.WriteLine("Index of maximal element is equal to: {0}", indexOfMaxElement);
+
 Console.WriteLine("Maximal absolute element is equal to: {0:F2}", maxAbsElement);
+
 Console.WriteLine("Sum of indexes of positive elements: {0}", sumOfIndexesOfPositiveElements);
+
 Console.WriteLine("Number of integer elements: {0}", numberOfIntegers);
 
